@@ -17,11 +17,4 @@ public class ItemController {
         return itemService.getAllItems();
     }
 
-    /* @GetMapping("/items")
-    public List<Item> getItems() {
-        List<Item> items = itemService.getAllItems();
-        System.out.println("Items: " + items); // Verifica si se obtienen correctamente
-        return items;
-    } */
-
 }
