@@ -12,11 +12,17 @@ CREATE TABLE `Items` (
 
 #Insert test data
 INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
-(1,"Texto que se actualice segun variables de React", 1),
-(2,"Links a mi github, linkedin, etc.",0);
+(1,'Texto que se actualice segun variables de React', 1),
+(2,'Listas con checkbox', 0),
+(3,'Una Database conectada.', 0),
+(4,'Una foto mia (Opcional: salir presentable)', 1),
+(5,'Links a mi github, linkedin, etc.', 0),
+(6,'useStates', 1),
+(7,'Seccion About Me', 0),
+(8,'Seccion Works', 0);
 
 #Read new Data
 SELECT *
 FROM Items;
 
-DROP TABLE Items;
+TRUNCATE TABLE Items;
