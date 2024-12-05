@@ -6,7 +6,7 @@ USE SitioWebTest;
 CREATE TABLE `Items` (
   `id_Items` int(11) NOT NULL,
   `name_Items` varchar(100) NOT NULL,
-  `status_Items` bit(1) NOT NULL,
+  `status_Items` TINYINT(1) NOT NULL,
   PRIMARY KEY (`id_Items`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -18,3 +18,5 @@ INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
 #Read new Data
 SELECT *
 FROM Items;
+
+DROP TABLE Items;
