@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "SitioWebTestBackendApplication",
+        "request": "launch",
+        "mainClass": "com.example.SitioWebTestBackend.SitioWebTestBackendApplication",
+        "vmArgs": "-Dspring.profiles.active=default",
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  }
+  
