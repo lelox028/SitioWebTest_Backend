@@ -30,4 +30,5 @@ FROM Items;
 
 TRUNCATE TABLE Items;
 
--- INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
+INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
+(15,"test",1)

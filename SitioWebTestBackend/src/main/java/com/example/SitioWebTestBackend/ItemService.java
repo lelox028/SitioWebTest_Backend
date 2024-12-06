@@ -27,4 +27,13 @@ public class ItemService {
             throw new RuntimeException("Item not found with ID: " + id);
         }
     }
+
+    public void deleteItem(int id) {
+        Optional<Item> optionalItem = itemRepository.findById(id);
+        if (optionalItem.isPresent()) {
+            itemRepository.deleteById(id);
+        } else {
+            throw new RuntimeException("Item not found with ID: " + id);
+        }
+    }
 }
