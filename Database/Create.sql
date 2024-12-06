@@ -19,10 +19,15 @@ INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
 (5,'Links a mi github, linkedin, etc.', 0),
 (6,'useStates', 1),
 (7,'Seccion About Me', 0),
-(8,'Seccion Works', 0);
+(8,'Seccion Works', 0),
+(9,'CRUD checkboxes',0),
+(10,'Footer con opciones de contacto',0),
+(11,'Seccion/pagina Skills',0);
 
 #Read new Data
 SELECT *
 FROM Items;
 
 TRUNCATE TABLE Items;
+
+-- INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
