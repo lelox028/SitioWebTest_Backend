@@ -16,6 +16,15 @@ public class ItemService {
         return itemRepository.findAll();
     }
 
+    public Item getItemById(int id){
+        Optional<Item> optionalItem = itemRepository.findById(id);
+        if (optionalItem.isPresent()) {
+            return optionalItem.get();
+        } else {
+            throw new RuntimeException("Item not found with ID: " + id);
+        }
+    }
+
     public Item updateItem(int id, Item updatedItem) {
         Optional<Item> optionalItem = itemRepository.findById(id);
         if (optionalItem.isPresent()) {
@@ -36,4 +45,6 @@ public class ItemService {
             throw new RuntimeException("Item not found with ID: " + id);
         }
     }
+
+    
 }

@@ -22,6 +22,16 @@ public class ItemController {
         return itemService.getAllItems();
     }
 
+    @GetMapping("/item/{id}")
+    public ResponseEntity<Item> getItemById(@PathVariable int id){
+        try {
+            Item item = itemService.getItemById(id);
+            return ResponseEntity.ok(item);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @PutMapping("/item/{id}")
     public ResponseEntity<Item> updateItem(@PathVariable int id, @RequestBody Item updatedItem){
         try {
