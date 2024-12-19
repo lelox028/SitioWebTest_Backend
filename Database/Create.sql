@@ -22,7 +22,8 @@ INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
 (8,'Seccion Works', 0),
 (9,'CRUD checkboxes',0),
 (10,'Footer con opciones de contacto',0),
-(11,'Seccion/pagina Skills',0);
+(11,'Seccion/pagina Skills',0),
+(12,"PopUps",0);
 
 #Read new Data
 SELECT *
