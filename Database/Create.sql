@@ -29,6 +29,11 @@ INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
 SELECT *
 FROM Items;
 
+
+##################
+### DO NOT RUN ###
+##################
+
 TRUNCATE TABLE Items;
 
 INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
