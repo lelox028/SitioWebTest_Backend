@@ -23,7 +23,8 @@ INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
 (9,'CRUD checkboxes',0),
 (10,'Footer con opciones de contacto',0),
 (11,'Seccion/pagina Skills',0),
-(12,"PopUps",0);
+(12,"PopUps",0),
+(13,"React Router",1);
 
 #Read new Data
 SELECT *
@@ -37,4 +38,4 @@ FROM Items;
 TRUNCATE TABLE Items;
 
 INSERT INTO `Items` (id_Items, name_Items, status_Items) VALUES
-(15,"test",1)
+(15,"test",1);
